@@ -1,22 +1,24 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import CartWidget from "./components/CartWidget";
-import Clicker from "./components/Clicker";
 import ItemListContainer from "./components/ItemListContainer";
+import ItemDetail from "./components/ItemDetail";
 import NavBar from "./components/NavBar";
 import logoNavBar from "./img/logoNavBar.png";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar img={logoNavBar}>
-        <CartWidget />
-      </NavBar>
-      <ItemListContainer greetings="Your best Chess Store" />
-      <hr></hr>
-      <Clicker></Clicker>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <NavBar img={logoNavBar}>
+        </NavBar>
+        <Routes>
+          <Route path='/' element={ <ItemListContainer greetings={'Your best Sport Store!!'} /> } ></Route>
+          <Route path='/item/:id' element={<ItemDetail/>} />
+          <Route path='/category/:idCategories' element={<ItemListContainer greetings={'Your best Sport Store!!'}/>}/>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
 export default App;
-

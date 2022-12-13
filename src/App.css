@@ -1,5 +1,14 @@
+html {
+  background-image: url('./img/background.jpg') ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .App {
   text-align: center;
+  color: azure;
+
 }
 
 .App-logo {
@@ -36,3 +45,4 @@
     transform: rotate(360deg);
   }
 }
+

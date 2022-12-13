@@ -1,0 +1,19 @@
+.container-page {
+    /* border: solid 1px; */
+    margin: 60px;
+    background-image: url('../img/ball-background.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
+color: black
+}
+
+.size-img {
+    width: 450px;
+    height: auto;
+}
+
+.border-img {
+    /* border: solid 1px rgb(182, 178, 178); */
+    margin: 30px;
+}

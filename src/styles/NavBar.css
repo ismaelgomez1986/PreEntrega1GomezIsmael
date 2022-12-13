@@ -1,0 +1,30 @@
+
+.categories ul {
+    justify-content: center;
+    align-items: center;
+}
+
+.categories li {
+    display: inline;
+    padding: 20px;
+}
+
+.categories a {
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    align-items: center;
+}
+
+.cart {
+    display: inline-flex;
+}
+
+.cart div {
+    margin-right: 5px;
+}
+
+.navbar {
+    color: black;
+}
